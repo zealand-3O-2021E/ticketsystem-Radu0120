@@ -5,15 +5,13 @@ namespace ClassLibraryTicketSystem
     /// <summary>
     /// Class representing a car object with LicensePLate and Date properties
     /// </summary>
-    public class Car
+    public class Car : BaseClass
     {
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
         /// <summary>
         /// Returns the price for this car
         /// </summary>
         /// <returns>240</returns>
-        public double Price()
+        public override double Price()
         {
             return 240;
         }
@@ -21,7 +19,7 @@ namespace ClassLibraryTicketSystem
         /// Returns the vehicle type
         /// </summary>
         /// <returns>Car</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }

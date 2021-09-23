@@ -5,23 +5,21 @@ namespace ClassLibraryTicketSystem
     /// <summary>
     /// Class representing a MC object with LicensePLate and Date properties
     /// </summary>
-    public class MC
+    public class MC : BaseClass
     {
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
         /// <summary>
-        /// Returns the price for this car
+        /// Returns the price for this MC
         /// </summary>
-        /// <returns>240</returns>
-        public double Price()
+        /// <returns>125</returns>
+        public override double Price()
         {
             return 125;
         }
         /// <summary>
         /// Returns the vehicle type
         /// </summary>
-        /// <returns>Car</returns>
-        public string VehicleType()
+        /// <returns>MC</returns>
+        public override string VehicleType()
         {
             return "MC";
         }
