@@ -33,5 +33,12 @@ namespace ClassLibraryTicketSystem.Tests
             var output = car.VehicleType();
             Assert.AreEqual("Car", output);
         }
+        [TestMethod()]
+        public void BrobizzTest()
+        {
+            var car = new Car("123", DateTime.Now, true);
+            var output = car.Price();
+            Assert.AreEqual(228, output);
+        }
     }
 }

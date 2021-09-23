@@ -12,6 +12,13 @@ namespace ClassLibraryTicketSystem.Tests
     public class MCTests
     {
         [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void MCTest()
+        {
+            var mc = new MC("12345678", DateTime.Now);
+            Assert.Fail();
+        }
+        [TestMethod()]
         public void PriceTest()
         {
             var mc = new MC();
@@ -25,6 +32,13 @@ namespace ClassLibraryTicketSystem.Tests
             var mc = new MC();
             var output = mc.VehicleType();
             Assert.AreEqual("MC", output);
+        }
+        [TestMethod()]
+        public void BrobizzTest()
+        {
+            var mc = new MC("123", DateTime.Now, true);
+            var output = mc.Price();
+            Assert.AreEqual(118.75, output);
         }
     }
 }

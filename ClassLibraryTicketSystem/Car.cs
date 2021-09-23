@@ -9,12 +9,17 @@ namespace ClassLibraryTicketSystem
     {
         public Car() { }
         public Car(string licenseplate, DateTime date) : base(licenseplate, date) { }
+        public Car(string licenseplate, DateTime date, bool brobiz) : base(licenseplate, date, brobiz) { }
         /// <summary>
-        /// Returns the price for this car
+        /// Returns the price for this car, if brobizz was used, it will return 5% less
         /// </summary>
         /// <returns>240</returns>
         public override double Price()
         {
+            if (Brobizz)
+            {
+                return 240 - (240*0.05);
+            }
             return 240;
         }
         /// <summary>
