@@ -7,6 +7,8 @@ namespace ClassLibraryTicketSystem
     /// </summary>
     public class Car : BaseClass
     {
+        public Car() { }
+        public Car(string licenseplate, DateTime date) : base(licenseplate, date) { }
         /// <summary>
         /// Returns the price for this car
         /// </summary>

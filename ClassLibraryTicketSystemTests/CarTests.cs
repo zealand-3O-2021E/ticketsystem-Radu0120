@@ -12,6 +12,13 @@ namespace ClassLibraryTicketSystem.Tests
     public class CarTests
     {
         [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void CarTest()
+        {
+            var car = new Car("12345678",DateTime.Now);
+            Assert.Fail();
+        }
+        [TestMethod()]
         public void PriceTest()
         {
             var car = new Car();

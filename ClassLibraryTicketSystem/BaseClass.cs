@@ -11,6 +11,18 @@ namespace ClassLibraryTicketSystem
     /// </summary>
     public abstract class BaseClass
     {
+        public BaseClass()
+        {
+
+        }
+        public BaseClass(string licenseplate, DateTime date)
+        {
+            if (licenseplate.Length > 7)
+            {
+                throw new ArgumentException();
+            }
+            else LicensePlate = licenseplate;
+        }
         protected string LicensePlate { get; set; }
         protected DateTime Date { get; set; }
         /// <summary>
