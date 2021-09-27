@@ -9,11 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryTicketSystemTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{3B3EE3D0-FAEF-45B2-A466-60E5557A016D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{FA1D6C1A-E06F-4181-B8F5-9F5EE30A0D2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{FA1D6C1A-E06F-4181-B8F5-9F5EE30A0D2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTicketLibrary", "OresundbronTicketLibrary\OresundbronTicketLibrary.csproj", "{F9AFE9BC-0665-492B-ADFD-09339AF6540B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronTicketLibrary", "OresundbronTicketLibrary\OresundbronTicketLibrary.csproj", "{F9AFE9BC-0665-492B-ADFD-09339AF6540B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTicketLibraryTests", "OresundbronTicketLibraryTests\OresundbronTicketLibraryTests.csproj", "{BB305211-EFE4-4A63-8126-D49849C8B370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronTicketLibraryTests", "OresundbronTicketLibraryTests\OresundbronTicketLibraryTests.csproj", "{BB305211-EFE4-4A63-8126-D49849C8B370}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTicketSystem", "ClientTicketSystem\ClientTicketSystem.csproj", "{79F79E70-7451-4502-8E7C-8984D4BC5891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTicketSystemTests", "ClientTicketSystemTests\ClientTicketSystemTests.csproj", "{299A3578-16F3-4ADA-B59F-9EF243F09BB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{BB305211-EFE4-4A63-8126-D49849C8B370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB305211-EFE4-4A63-8126-D49849C8B370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB305211-EFE4-4A63-8126-D49849C8B370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F79E70-7451-4502-8E7C-8984D4BC5891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F79E70-7451-4502-8E7C-8984D4BC5891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F79E70-7451-4502-8E7C-8984D4BC5891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F79E70-7451-4502-8E7C-8984D4BC5891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299A3578-16F3-4ADA-B59F-9EF243F09BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299A3578-16F3-4ADA-B59F-9EF243F09BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299A3578-16F3-4ADA-B59F-9EF243F09BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299A3578-16F3-4ADA-B59F-9EF243F09BB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
