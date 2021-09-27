@@ -9,6 +9,29 @@
             Abstract base class used for inheritance
             </summary>
         </member>
+        <member name="M:ClassLibraryTicketSystem.BaseClass.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Constructor for a Base object
+            </summary>
+            <param name="licenseplate">License plate</param>
+            <param name="date">Date</param>
+            <param name="brobizz">If brobizz was used or not</param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.BaseClass.LicensePlate">
+            <summary>
+            License plate property, of the string type
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.BaseClass.Brobizz">
+            <summary>
+            Boolean representing whether brobizz was used or not
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.BaseClass.Date">
+            <summary>
+            Date property, of the DateTime type
+            </summary>
+        </member>
         <member name="M:ClassLibraryTicketSystem.BaseClass.Price">
             <summary>
             Returns the price
@@ -19,18 +42,26 @@
             <summary>
             Returns the vehicle type
             </summary>
-            <returns>Car</returns>
+            <returns>Base</returns>
         </member>
         <member name="T:ClassLibraryTicketSystem.Car">
             <summary>
-            Class representing a car object with LicensePLate and Date properties
+            Class representing a car object
             </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Constructor for a Car object, inherits from the base class
+            </summary>
+            <param name="licenseplate">License plate</param>
+            <param name="date">Date</param>
+            <param name="brobizz">If brobizz was used or not</param>
         </member>
         <member name="M:ClassLibraryTicketSystem.Car.Price">
             <summary>
             Returns the price for this car, if brobizz was used, it will return 5% less
             </summary>
-            <returns>240</returns>
+            <returns>240, or 5% less if brobizz was used</returns>
         </member>
         <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
             <summary>
@@ -40,14 +71,22 @@
         </member>
         <member name="T:ClassLibraryTicketSystem.MC">
             <summary>
-            Class representing a MC object with LicensePLate and Date properties
+            Class representing a MC object, inherits from the base class
             </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Constructor for a MC object
+            </summary>
+            <param name="licenseplate">License plate</param>
+            <param name="date">Date</param>
+            <param name="brobizz">If brobizz was used or not</param>
         </member>
         <member name="M:ClassLibraryTicketSystem.MC.Price">
             <summary>
             Returns the price for this MC, if brobizz was used, it will return 5% less
             </summary>
-            <returns>125</returns>
+            <returns>125, or 5% less if brobizz was used</returns>
         </member>
         <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
             <summary>

@@ -4,6 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Radu\Source\Repos\ticketsystem-Radu0120\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="ExternalDll\" />
   </ItemGroup>

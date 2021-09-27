@@ -3,17 +3,21 @@
 namespace ClassLibraryTicketSystem
 {
     /// <summary>
-    /// Class representing a MC object with LicensePLate and Date properties
+    /// Class representing a MC object, inherits from the base class
     /// </summary>
     public class MC : BaseClass
     {
-        public MC() { }
-        public MC(string licenseplate, DateTime date) : base(licenseplate, date) { }
-        public MC(string licenseplate, DateTime date, bool brobiz) : base(licenseplate, date, brobiz) { }
+        /// <summary>
+        /// Constructor for a MC object
+        /// </summary>
+        /// <param name="licenseplate">License plate</param>
+        /// <param name="date">Date</param>
+        /// <param name="brobizz">If brobizz was used or not</param>
+        public MC(string licenseplate, DateTime date, bool brobizz) : base(licenseplate, date, brobizz) { }
         /// <summary>
         /// Returns the price for this MC, if brobizz was used, it will return 5% less
         /// </summary>
-        /// <returns>125</returns>
+        /// <returns>125, or 5% less if brobizz was used</returns>
         public override double Price()
         {
             if (Brobizz)

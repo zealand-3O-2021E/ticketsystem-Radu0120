@@ -3,17 +3,21 @@
 namespace ClassLibraryTicketSystem
 {
     /// <summary>
-    /// Class representing a car object with LicensePLate and Date properties
+    /// Class representing a car object
     /// </summary>
     public class Car : BaseClass
     {
-        public Car() { }
-        public Car(string licenseplate, DateTime date) : base(licenseplate, date) { }
-        public Car(string licenseplate, DateTime date, bool brobiz) : base(licenseplate, date, brobiz) { }
+        /// <summary>
+        /// Constructor for a Car object, inherits from the base class
+        /// </summary>
+        /// <param name="licenseplate">License plate</param>
+        /// <param name="date">Date</param>
+        /// <param name="brobizz">If brobizz was used or not</param>
+        public Car(string licenseplate, DateTime date, bool brobizz) : base(licenseplate, date, brobizz) { }
         /// <summary>
         /// Returns the price for this car, if brobizz was used, it will return 5% less
         /// </summary>
-        /// <returns>240</returns>
+        /// <returns>240, or 5% less if brobizz was used</returns>
         public override double Price()
         {
             if (Brobizz)

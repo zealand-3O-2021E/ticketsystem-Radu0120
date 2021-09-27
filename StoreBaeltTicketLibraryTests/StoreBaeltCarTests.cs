@@ -12,6 +12,13 @@ namespace StoreBaeltTicketLibrary.Tests
     public class StoreBaeltCarTests
     {
         [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void CarTest()
+        {
+            var car = new StoreBaeltCar("12345678", DateTime.Now, false);
+            Assert.Fail();
+        }
+        [TestMethod()]
         public void PriceBrobizzTest()
         {
             var car = new StoreBaeltCar("123", DateTime.Now, true);

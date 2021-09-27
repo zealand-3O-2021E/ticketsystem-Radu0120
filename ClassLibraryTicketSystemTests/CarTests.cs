@@ -15,13 +15,13 @@ namespace ClassLibraryTicketSystem.Tests
         [ExpectedException(typeof(ArgumentException))]
         public void CarTest()
         {
-            var car = new Car("12345678",DateTime.Now);
+            var car = new Car("12345678",DateTime.Now, false);
             Assert.Fail();
         }
         [TestMethod()]
         public void PriceTest()
         {
-            var car = new Car();
+            var car = new Car("1234", DateTime.Now, false);
             var output = car.Price();
             Assert.AreEqual(240,output);
         }
@@ -29,7 +29,7 @@ namespace ClassLibraryTicketSystem.Tests
         [TestMethod()]
         public void VehicleTypeTest()
         {
-            var car = new Car();
+            var car = new Car("1234", DateTime.Now, false);
             var output = car.VehicleType();
             Assert.AreEqual("Car", output);
         }
