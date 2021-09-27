@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibraryTicketSystem.BaseClass">
+            <summary>
+            Abstract base class used for inheritance
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BaseClass.Price">
+            <summary>
+            Returns the price
+            </summary>
+            <returns>100</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BaseClass.VehicleType">
+            <summary>
+            Returns the vehicle type
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.Car">
+            <summary>
+            Class representing a car object with LicensePLate and Date properties
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            Returns the price for this car, if brobizz was used, it will return 5% less
+            </summary>
+            <returns>240</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
+            <summary>
+            Returns the vehicle type
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.MC">
+            <summary>
+            Class representing a MC object with LicensePLate and Date properties
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            Returns the price for this MC, if brobizz was used, it will return 5% less
+            </summary>
+            <returns>125</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
+            <summary>
+            Returns the vehicle type
+            </summary>
+            <returns>MC</returns>
+        </member>
+    </members>
+</doc>
